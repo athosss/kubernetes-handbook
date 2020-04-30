@@ -75,6 +75,9 @@ metadata:
 spec:
   serviceName: "nginx"
   replicas: 3
+  selector:
+    matchLabels:
+      app: nginx 
   template:
     metadata:
       labels:
@@ -202,6 +205,9 @@ metadata:
 spec:
   serviceName: "nginx"
   replicas: 2
+  selector:
+    matchLabels:
+      app: nginx 
   template:
     metadata:
       labels:
